@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="apk_name">WiFi Manager</string>
+	<string name="app_name">WiFi Manager</string>
+	<string name="menu_settings">Settings</string>
+	<string name="menu_about">About</string>
+	<string name="menu_exit">Exit</string>
+	<string name="button_ok">OK</string>
+	<string name="button_cancel">Cancel</string>
+	<string name="button_unlock">Unlock</string>
+	<string name="button_close">Close</string>
+	<string name="button_clear">Clear</string>
+	<string name="button_reset">Revert</string>
+	<string name="button_disable">Disable</string>
+	<string name="button_enable">Enable</string>
+	<string name="button_yes">Yes</string>
+	<string name="button_no">No</string>
+	<string name="please_wait">Please wait&#8230;</string>
+	<string name="dialog_prerun">Preparing&#8230;</string>
+	<string name="dialog_run">Moving&#8230;</string>
+	<string name="dialog_postrun">Resetting the device&#8230;</string>
+	<string name="admin_settings">General settings</string>
+	<string name="system_settings">Advanced settings</string>
+	<string name="wifi_settings">WiFi settings</string>
+	<string name="pref_master_password">Master passcode</string>
+	<string name="pref_master_password_set">Master passcode is set</string>
+	<string name="pref_master_password_unset">Master passcode is NOT SET</string>
+	<string name="pref_wifi_password">WiFi passcode</string>
+	<string name="pref_wifi_password_set">WiFi passcode is set</string>
+	<string name="pref_wifi_password_unset">WiFi passcode is NOT SET</string>
+	<string name="pref_time_limit">Allowed time</string>
+	<string name="pref_time_limit_"><![CDATA[%1$d %2$s every %3$d %4$s]]></string>
+	<string name="pref_system_app">Convert to system app</string>
+	<string name="pref_system_app_">Attempt to move the app into system</string>
+	<string name="pref_user_app">Convert to user app</string>
+	<string name="pref_user_app_">Attempt to move the app back to user space</string>
+	<string name="pref_wifi_mode">WiFi mode</string>
+	<string name="title_system_app">Convert to SYSTEM</string>
+	<string name="title_user_app">Convert to USER</string>
+	<string name="title_error">Error!</string>
+	<string name="label_password1">Password:</string>
+	<string name="label_password2">Again:</string>
+	<string name="label_time_amount">Amount:</string>
+	<string name="label_time_period">Per:</string>
+	<string name="config_error_password_mismatch">Passcodes do not match.</string>
+	<string name="hint_password_new"></string>
+	<string name="hint_password_unchanged">(unchanged)</string>
+	<!-- NOTE: keep in sync with @donottranslate/wifi_mode_values -->
+	<string-array name="wifi_mode_names">
+		<item>Open / Unmanaged</item>
+		<item>Protected</item>
+		<item>Timed</item>
+		<item>Locked</item>
+	</string-array>
+	<!-- NOTE: keep in sync with @donottranslate/time_period_values -->
+	<string-array name="time_period_names">
+		<item>minutes</item>
+		<item>hours</item>
+		<item>days</item>
+		<item>weeks</item>
+		<item>months</item>
+		<item>years</item>
+	</string-array>
+	<string name="config_saved">Configuration saved.</string>
+	<string name="wifi_status_intro">Current wifi state:</string>
+	<string name="wifi_status_intro_connected_true">CONNECTED</string>
+	<string name="wifi_status_intro_connected_false">DISCONNECTED</string>
+	<string name="wifi_protected_intro">To unlock and enable wifi,\nenter the correct passcode below.</string>
+	<string name="wifi_enabled_intro"><b>Wifi is currently enabled.</b>\nTap the button to disable.</string>
+	<string name="wifi_disabled_intro"><b>Wifi is currently disabled.</b>\nTap the button to enable.</string>
+	<string name="wifi_locked_intro"><b>Wifi is currently locked.</b>\nIt cannot be used at this time.</string>
+	<string name="wifi_notime_intro"><b>No time left in this period.</b>\nWifi cannot be used at this time.</string>
+	<string name="wifi_details">Details</string>
+	<string name="admin_login_title">Access restricted!</string>
+	<string name="admin_login_intro">To get access to settings,\nenter the correct passcode below.</string>
+	<string name="admin_password_mismatch">Passcode incorrect</string>
+	<string name="wifi_password_mismatch">Passcode incorrect</string>
+	<string name="notice_enabled">WiFi enabled</string>
+	<string name="notice_disabled">WiFi disabled</string>
+	<string name="notice_unlocked">WiFi unlocked</string>
+	<string name="status_mode">Wifi mode:</string>
+	<string name="status_state">Wifi state:</string>
+	<string name="status_connected">Connected:</string>
+	<string name="status_connected_true">YES</string>
+	<string name="status_connected_false">NO</string>
+	<string name="status_locked">Lock status:</string>
+	<string name="status_locked_no">UNLOCKED</string>
+	<string name="status_locked_yes">LOCKED</string>
+	<string name="status_period_begin">Period start:</string>
+	<string name="status_period_end">Period end:</string>
+	<string name="status_time_limit">Allowed time:</string>
+	<string name="status_time_left">Time left:</string>
+	<string name="exception"><![CDATA[
+		<b>Error performing requested operation.</b><br />
+		<br />
+		<small><i>%1$s</i></small>
+	]]></string>
+	<string name="date_format"><![CDATA[MMM d, yyyy \'at\' h:mm a]]></string>
+	<string name="time_format"><![CDATA[%2$02d:%3$02d]]></string>
+	<string name="time_format_with_days"><![CDATA[%1$dd %2$02d:%3$02d]]></string>
+	<string name="about"><![CDATA[
+		{NAME=<big><b>%1$s</b></big><br />}
+		{VERSION=Version: %1$s<br />}
+		{BUILD=Build: %1$s<br />}
+		<br />
+		<small>&copy; 2014 by Ra &lt;<a href="mailto:ravilov@linux.hr">ravilov@linux.hr</a>&gt;</small>
+	]]></string>
+	<string name="message_system_app"><![CDATA[<small>
+		This will attempt to move the app into the system image, thus making it a system-level app.
+		This should only take a few moments.
+		Once started the process cannot be stopped.
+		Once the app is moved, a soft system reset will be attempted in order for things to settle.
+		<i><u>App settings might get reset to defaults as part of this process.</u></i><br />
+		<br />
+		<b><u>The device must be rooted for this to work.</u></b>
+		You might get a SUPERUSER permission request during the process.<br />
+		<br />
+		Proceed?
+	</small>]]></string>
+	<string name="message_user_app"><![CDATA[<small>
+		This will attempt to move the app into the user space, thus making it a standard user-level app.
+		This should only take a few moments.
+		Once started the process cannot be stopped.
+		Once the app is moved, a soft system reset will be attempted in order for things to settle.
+		<i><u>All app settings will get reset to defaults as part of this process.</u></i><br />
+		<br />
+		<b><u>The device must be rooted for this to work.</u></b>
+		You might get a SUPERUSER permission request during the process.<br />
+		<br />
+		Proceed?
+	</small>]]></string>
+</resources>

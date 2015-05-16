@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:apk="http://schemas.android.com/apk/res/hr.ravilov.wifinator">
+	<PreferenceCategory android:title="@string/admin_settings">
+		<hr.ravilov.wifinator.PrefPassword android:key="pref_master_password" android:persistent="false" android:title="@string/pref_master_password" apk:mismatchMessage="@string/config_error_password_mismatch" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/wifi_settings">
+		<ListPreference android:key="pref_wifi_mode" android:persistent="false" android:title="@string/pref_wifi_mode" android:entryValues="@array/wifi_mode_values" android:entries="@array/wifi_mode_names" />
+		<hr.ravilov.wifinator.PrefPassword android:key="pref_wifi_password" android:persistent="false" android:title="@string/pref_wifi_password" apk:mismatchMessage="@string/config_error_password_mismatch" />
+		<hr.ravilov.wifinator.PrefTimePeriod android:key="pref_time_limit" android:persistent="false" android:title="@string/pref_time_limit" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/system_settings">
+		<Preference android:key="pref_system_app" android:persistent="false" android:title="@string/pref_system_app" android:summary="@string/pref_system_app_" />
+		<Preference android:key="pref_user_app" android:persistent="false" android:title="@string/pref_user_app" android:summary="@string/pref_user_app_" />
+	</PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<string name="novalue" translatable="false">-</string>
+	<!-- NOTE: keep in sync with Config.WifiMode -->
+	<string-array name="wifi_mode_values" translatable="false">
+		<item>open</item>
+		<item>protected</item>
+		<item>timed</item>
+		<item>locked</item>
+	</string-array>
+	<!-- NOTE: keep in sync with Config.TimePeriod -->
+	<string-array name="time_period_values" translatable="false" tools:ignore="UnusedResources">
+		<item>minute</item>
+		<item>hour</item>
+		<item>day</item>
+		<item>week</item>
+		<item>month</item>
+		<item>year</item>
+	</string-array>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="default_admin_password" translatable="false">trustno1</string>
+	<string name="default_wifi_password" translatable="false">wifi</string>
+	<string name="default_wifi_mode" translatable="false">locked</string>
+	<integer name="default_time_limit_value" translatable="false">2</integer>
+	<string name="default_time_limit_type" translatable="false">hour</string>
+	<integer name="default_time_period_value" translatable="false">1</integer>
+	<string name="default_time_period_type" translatable="false">day</string>
+	<integer name="default_time_used" translatable="false">0</integer>
+</resources>

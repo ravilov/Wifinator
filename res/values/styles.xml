@@ -1,0 +1,137 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="AppBaseTheme" parent="android:Theme" />
+	<style name="AppTheme" parent="AppBaseTheme" />
+	<style name="Invisible" parent="android:Theme.NoDisplay" />
+	<style name="Empty" />
+	<style name="Dialog" parent="android:Theme.Dialog" />
+	<style name="Subtitle">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@android:drawable/divider_horizontal_dim_dark</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:paddingTop">3dip</item>
+		<item name="android:paddingBottom">3dip</item>
+		<item name="android:paddingLeft">8dip</item>
+		<item name="android:paddingRight">8dip</item>
+	</style>
+	<style name="ButtonBar" parent="android:ButtonBar">
+		<item name="android:orientation">horizontal</item>
+	</style>
+	<style name="Big">
+		<item name="android:gravity">center</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">24sp</item>
+	</style>
+	<style name="MainPanel">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="MainSubpanel">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:orientation">vertical</item>
+		<item name="android:paddingTop">5dip</item>
+		<item name="android:paddingBottom">10dip</item>
+		<item name="android:paddingLeft">10dip</item>
+		<item name="android:paddingRight">10dip</item>
+		<item name="android:layout_margin">0dip</item>
+		<item name="android:visibility">gone</item>
+	</style>
+	<style name="MainSubpanel_Notice">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_margin">16dip</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+	<style name="MainSubpanel_Buttons">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:layout_margin">5dip</item>
+	</style>
+	<style name="MainSubpanel_Button">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+	<style name="StatusPanel">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center_horizontal|top</item>
+		<item name="android:padding">10dip</item>
+		<item name="android:stretchColumns">1</item>
+		<item name="android:shrinkColumns">1</item>
+	</style>
+	<style name="StatusPanel_Row">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center_vertical|top</item>
+		<item name="android:padding">1dip</item>
+		<item name="android:visibility">gone</item>
+	</style>
+	<style name="StatusPanel_Spacer" parent="StatusPanel_Row">
+		<item name="android:layout_marginTop">12dip</item>
+	</style>
+	<style name="StatusPanel_Cell">
+		<item name="android:textSize">14sp</item>
+	</style>
+	<style name="StatusPanel_Caption" parent="StatusPanel_Cell">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:paddingRight">10dip</item>
+	</style>
+	<style name="StatusPanel_Content" parent="StatusPanel_Cell">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:singleLine">false</item>
+		<item name="android:text"></item>
+	</style>
+	<style name="AdminView">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:stretchColumns">1</item>
+		<item name="android:shrinkColumns">0</item>
+	</style>
+	<style name="AdminView_Row">
+		<item name="android:layout_gravity">center_vertical|top</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:layout_margin">0dip</item>
+		<item name="android:paddingLeft">10dip</item>
+		<item name="android:paddingRight">10dip</item>
+		<item name="android:paddingTop">3dip</item>
+		<item name="android:paddingBottom">1dip</item>
+	</style>
+	<style name="AdminView_Row.SectionBar" parent="AdminView_Row">
+		<item name="android:padding">0dip</item>
+	</style>
+	<style name="AdminView_Row.First" parent="AdminView_Row" />
+	<style name="AdminView_Row.Last" parent="AdminView_Row">
+		<item name="android:paddingBottom">10dip</item>
+	</style>
+	<style name="AdminView_SectionBar">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_span">2</item>
+		<item name="android:background">@android:drawable/divider_horizontal_dim_dark</item>
+		<item name="android:layout_margin">0dip</item>
+		<item name="android:padding">6dip</item>
+	</style>
+	<style name="AdminView_Caption">
+		<item name="android:textSize">16sp</item>
+		<item name="android:paddingRight">10sp</item>
+	</style>
+	<style name="AdminView_Widget">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+	<declare-styleable name="PrefPassword">
+		<attr name="hasPassword" format="boolean" />
+		<attr name="mismatchMessage" format="string|reference" />
+	</declare-styleable>
+	<declare-styleable name="PrefTimePeriod">
+	</declare-styleable>
+</resources>

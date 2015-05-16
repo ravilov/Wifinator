@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdminView">
+	<TableRow style="@style/AdminView_Row">
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_time_amount" style="@style/AdminView_Caption" />
+		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:layout_weight="1">
+			<EditText android:id="@+id/time_amount" android:layout_width="60dip" android:layout_height="wrap_content" android:layout_weight="0" android:inputType="number" android:gravity="right" />
+			<Spinner android:id="@+id/time_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:prompt="@string/label_time_amount" android:entries="@array/time_period_names" />
+		</LinearLayout>
+	</TableRow>
+	<TableRow style="@style/AdminView_Row">
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_time_period" style="@style/AdminView_Caption" />
+		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:layout_weight="1">
+			<EditText android:id="@+id/period_amount" android:layout_width="60dip" android:layout_height="wrap_content" android:layout_weight="0" android:inputType="number" android:gravity="right" />
+			<Spinner android:id="@+id/period_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:prompt="@string/label_time_period" android:entries="@array/time_period_names" />
+		</LinearLayout>
+	</TableRow>
+</TableLayout>

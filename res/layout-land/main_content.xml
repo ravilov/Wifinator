@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/MainPanel" android:orientation="horizontal">
+	<include layout="@layout/main_control" android:layout_marginLeft="5dip" />
+	<include layout="@layout/main_status" android:layout_marginRight="5dip" />
+</LinearLayout>

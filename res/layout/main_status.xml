@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+	<TextView style="@style/Subtitle" android:text="@string/wifi_details" />
+	<TableLayout style="@style/StatusPanel">
+		<TableRow android:id="@+id/row_mode" style="@style/StatusPanel_Row">
+			<TextView style="@style/StatusPanel_Caption" android:text="@string/status_mode" />
+			<TextView android:id="@+id/field_mode" style="@style/StatusPanel_Content" />
+		</TableRow>
+		<TableRow android:id="@+id/row_state" style="@style/StatusPanel_Row">
+			<TextView style="@style/StatusPanel_Caption" android:text="@string/status_state" />
+			<TextView android:id="@+id/field_state" style="@style/StatusPanel_Content" />
+		</TableRow>
+		<TableRow android:id="@+id/row_connected" style="@style/StatusPanel_Row">
+			<TextView style="@style/StatusPanel_Caption" android:text="@string/status_connected" />
+			<TextView android:id="@+id/field_connected" style="@style/StatusPanel_Content" />
+		</TableRow>
+		<TableRow android:id="@+id/row_spacer" style="@style/StatusPanel_Spacer" />
+		<TableRow android:id="@+id/row_locked" style="@style/StatusPanel_Row">
+			<TextView style="@style/StatusPanel_Caption" android:text="@string/status_locked" />
+			<TextView android:id="@+id/field_locked" style="@style/StatusPanel_Content" />
+		</TableRow>
+		<TableRow android:id="@+id/row_period_begin" style="@style/StatusPanel_Row">
+			<TextView style="@style/StatusPanel_Caption" android:text="@string/status_period_begin" />
+			<TextView android:id="@+id/field_period_begin" style="@style/StatusPanel_Content" />
+		</TableRow>
+		<TableRow android:id="@+id/row_period_end" style="@style/StatusPanel_Row">
+			<TextView style="@style/StatusPanel_Caption" android:text="@string/status_period_end" />
+			<TextView android:id="@+id/field_period_end" style="@style/StatusPanel_Content" />
+		</TableRow>
+		<TableRow android:id="@+id/row_time_limit" style="@style/StatusPanel_Row">
+			<TextView style="@style/StatusPanel_Caption" android:text="@string/status_time_limit" />
+			<TextView android:id="@+id/field_time_limit" style="@style/StatusPanel_Content" />
+		</TableRow>
+		<TableRow android:id="@+id/row_time_left" style="@style/StatusPanel_Row">
+			<TextView style="@style/StatusPanel_Caption" android:text="@string/status_time_left" />
+			<TextView android:id="@+id/field_time_left" style="@style/StatusPanel_Content" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+	<LinearLayout android:id="@+id/main_wifi_enabled" style="@style/MainSubpanel">
+		<TextView style="@style/MainSubpanel_Notice" android:text="@string/wifi_enabled_intro" />
+		<LinearLayout style="@style/MainSubpanel_Buttons">
+			<include layout="@layout/buttons_main_enabled" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/main_wifi_disabled" style="@style/MainSubpanel">
+		<TextView style="@style/MainSubpanel_Notice" android:text="@string/wifi_disabled_intro" />
+		<LinearLayout style="@style/MainSubpanel_Buttons">
+			<include layout="@layout/buttons_main_disabled" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/main_wifi_protected" style="@style/MainSubpanel">
+		<TextView style="@style/MainSubpanel_Notice" android:text="@string/wifi_protected_intro" />
+		<EditText android:id="@+id/passkey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPassword" />
+		<LinearLayout style="@style/MainSubpanel_Buttons">
+			<include layout="@layout/buttons_main_protected" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/main_wifi_locked" style="@style/MainSubpanel">
+		<TextView style="@style/MainSubpanel_Notice" android:text="@string/wifi_locked_intro" />
+		<LinearLayout style="@style/MainSubpanel_Buttons">
+			<Button android:id="@+id/btn_close_locked" style="@style/MainSubpanel_Button" android:text="@string/button_close" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/main_wifi_notime" style="@style/MainSubpanel">
+		<TextView style="@style/MainSubpanel_Notice" android:text="@string/wifi_notime_intro" />
+		<LinearLayout style="@style/MainSubpanel_Buttons">
+			<Button android:id="@+id/btn_close_notime" style="@style/MainSubpanel_Button" android:text="@string/button_close" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

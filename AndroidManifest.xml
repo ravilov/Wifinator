@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="hr.ravilov.wifinator" android:versionCode="10005" android:versionName="1.0-beta5">
+	<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="20" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+	<uses-permission android:name="android.permission.SUPERUSER" />
+	<application android:allowBackup="true" android:label="@string/apk_name" android:icon="@drawable/icon" android:theme="@style/AppTheme">
+		<service android:name=".MainService" android:icon="@drawable/icon" android:label="@string/app_name" android:enabled="true" android:exported="false" />
+		<activity android:name=".MainActivity" android:label="@string/app_name" android:launchMode="singleTop">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<receiver android:name=".MainReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+			</intent-filter>
+		</receiver>
+		<activity android:name=".AdminActivity" android:label="@string/menu_settings" android:exported="false" android:excludeFromRecents="true" />
+		<activity android:name=".AdminLoginActivity" android:configChanges="orientation" android:exported="false" android:theme="@style/Dialog" android:excludeFromRecents="true" />
+		<activity android:name=".MainReceiver$OnBootCompleted" android:configChanges="orientation" android:exported="false" android:theme="@style/Invisible" android:noHistory="true" android:excludeFromRecents="true" />
+		<activity android:name=".MainReceiver$OnWifiStateChanged" android:configChanges="orientation" android:exported="false" android:theme="@style/Invisible" android:noHistory="true" android:excludeFromRecents="true" />
+		<activity android:name=".MainReceiver$OnServiceTick" android:configChanges="orientation" android:exported="false" android:theme="@style/Invisible" android:noHistory="true" android:excludeFromRecents="true" />
+	</application>
+</manifest>
